@@ -17,33 +17,6 @@ El pseudocódigo es una forma de representar algoritmos y la lógica de programa
 
 En este caso, se presenta el algoritmo **calculodegalones**:
 
-```text
-Algoritmo calculodegalones
-
-    // Variables
-    Definir litros, precioPorGalon Como Real
-    Definir galones, totalaCobrar Como Real
-
-    // Entrada
-    Escribir "Ingrese la producción del día (en litros):"
-    Leer litros
-
-    Escribir "Ingrese el precio por galón ($):"
-    Leer precioPorGalon
-
-    // Proceso
-    galones <- litros / 3.785
-    totalaCobrar <- galones * precioPorGalon
-
-    // Salida
-    Escribir ""
-    Escribir "--- Resultados ---"
-    Escribir "Equivalente en galones: ", galones, " galones"
-    Escribir "Total a cobrar        : $", totalaCobrar
-
-FinAlgoritmo
-```
-
 <figure class="figure">
   <img src="{{ '/assets/images/pseudocodigo-calculodegalones.png' | relative_url }}" alt="Pseudocódigo del algoritmo calculodegalones">
   <figcaption>Pseudocódigo del algoritmo calculodegalones.</figcaption>
