@@ -21,24 +21,6 @@ Desarrollar un programa en lenguaje C que permita ingresar la base y la altura d
 
 ### Pseudocódigo
 
-```text
-Algoritmo Area_Rectangulo
-
-    Definir base, altura, area Como Real
-
-    Escribir "Ingrese la base: "
-    Leer base
-
-    Escribir "Ingrese la altura: "
-    Leer altura
-
-    area <- base * altura
-
-    Escribir "El area del rectangulo es: ", area
-
-FinAlgoritmo
-```
-
 <figure class="figure">
   <img src="{{ '/assets/images/pseudocodigo-area-rectangulo.png' | relative_url }}" alt="Pseudocódigo del algoritmo área de rectángulo">
   <figcaption>Pseudocódigo del algoritmo Área_Rectangulo.</figcaption>
