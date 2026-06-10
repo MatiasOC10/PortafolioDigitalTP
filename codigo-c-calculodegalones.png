@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'es' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Navegación principal">
+        <a class="brand" href="{{ '/' | relative_url }}">Portafolio</a>
+        <div class="nav-links">
+          <a href="{{ '/' | relative_url }}">Inicio</a>
+          <a href="{{ '/pages/contenidos/' | relative_url }}">Contenidos</a>
+          <a href="{{ '/pages/ejercicio-estructura-secuencial/' | relative_url }}">Ejercicio</a>
+          <a href="{{ '/pages/unidad-2/' | relative_url }}">Unidad 2</a>
+          <a href="{{ '/pages/bibliografia/' | relative_url }}">Bibliografía</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="wrap content">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer wrap">
+      <p>Universidad Nacional de Loja · Ingeniería en Computación · Teoría de la Programación</p>
+    </footer>
+  </body>
+</html>

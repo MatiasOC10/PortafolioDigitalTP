@@ -1,39 +1,51 @@
-# Portafolio - GitHub Pages
+---
+layout: default
+title: Inicio
+---
 
-Este repositorio contiene una versión en Markdown/Jekyll del portafolio de Teoría de la Programación.
+<div class="hero">
+  <img src="{{ '/assets/images/logo-unl.png' | relative_url }}" alt="Logo de la Universidad Nacional de Loja">
+  <div>
+    <h1>Portafolio de Teoría de la Programación</h1>
+    <p class="lead">Exploración y uso de herramientas digitales para pseudocódigo y diagramas de flujo.</p>
+    <p><a class="button" href="{{ '/pages/contenidos/' | relative_url }}">Ver contenidos</a> <a class="button secondary" href="{{ '/assets/original/PORTAFOLIO.pdf' | relative_url }}">Descargar PDF original</a></p>
+    <section class="card">
+    <h3>Unidad 2</h3>
+    <p>Aplicación de estructuras condicionales y repetitivas en el diseño de algoritmos.</p>
+    <p><a href="{{ '/pages/unidad-2/' | relative_url }}">Abrir sección</a></p>
+  </section>
+</div>
+</div>
 
-## Estructura
+## Datos generales
 
-```text
-.
-├── _config.yml
-├── _layouts/
-│   └── default.html
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── images/
-│   └── original/
-│       └── PORTAFOLIO.pdf
-├── index.md
-└── pages/
-    ├── bibliografia.md
-    ├── contenidos.md
-    └── ejercicio-estructura-secuencial.md
-```
+| Campo | Información |
+|---|---|
+| Universidad | Universidad Nacional de Loja |
+| Carrera | Ingeniería en Computación |
+| Asignatura | Teoría de la Programación |
+| Docente | Lissete Geoconda Lopéz Faican |
+| Unidad | 1 |
+| Tema | Exploración y uso de herramientas digitales para pseudocódigo y diagramas de flujo |
+| Estudiante | Matias Joel Ortega Correa |
+| Fecha | 03/05/2026 |
 
-## Publicación en GitHub Pages
+## Secciones del sitio
 
-1. Crea un repositorio en GitHub.
-2. Sube todos los archivos de esta carpeta a la raíz del repositorio.
-3. En GitHub, entra a **Settings > Pages**.
-4. En **Build and deployment**, selecciona **Deploy from a branch**.
-5. Selecciona la rama `main` y la carpeta `/root`.
-6. Guarda los cambios y espera a que GitHub genere la URL del sitio.
-
-## Edición
-
-- Edita `index.md` para cambiar la portada.
-- Edita los archivos dentro de `pages/` para cambiar los contenidos.
-- Cambia estilos en `assets/css/style.css`.
-- Reemplaza imágenes en `assets/images/` si necesitas actualizar capturas o diagramas.
+<div class="card-grid">
+  <section class="card">
+    <h3>Contenidos</h3>
+    <p>Algoritmos, pseudocódigo, diagramas de flujo, prueba de escritorio, lenguajes de programación y programación por bloques.</p>
+    <p><a href="{{ '/pages/contenidos/' | relative_url }}">Abrir sección</a></p>
+  </section>
+  <section class="card">
+    <h3>Ejercicio secuencial</h3>
+    <p>Planteamiento, análisis, diseño del algoritmo, codificación, validación, dificultades, reflexión y conclusión.</p>
+    <p><a href="{{ '/pages/ejercicio-estructura-secuencial/' | relative_url }}">Abrir sección</a></p>
+  </section>
+  <section class="card">
+    <h3>Bibliografía</h3>
+    <p>Fuentes usadas para el desarrollo del portafolio.</p>
+    <p><a href="{{ '/pages/bibliografia/' | relative_url }}">Abrir sección</a></p>
+  </section>
+</div>

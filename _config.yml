@@ -1,5 +1,111 @@
-title: Portafolio - Teoría de la Programación
-description: Exploración y uso de herramientas digitales para pseudocódigo y diagramas de flujo
-lang: es
-markdown: kramdown
-permalink: pretty
+---
+layout: default
+title: Unidad 2
+---
+
+# Unidad 2: Aplicación de estructuras condicionales y repetitivas en el diseño
+
+## Datos generales
+
+| Campo | Información |
+|---|---|
+| Universidad | Universidad Nacional de Loja |
+| Carrera | Ingeniería en Computación |
+| Asignatura | Teoría de la Programación |
+| Docente | Lissete Geoconda Lopéz Faican |
+| Ciclo | 1 |
+| Unidad | 2 |
+| Tema | Aplicación de estructuras condicionales y repetitivas en el diseño |
+| Estudiante | Matias Joel Ortega Correa |
+| Fecha | 09/06/2026 |
+
+## Estructuras condicionales
+
+Las estructuras condicionales permiten que un programa tome decisiones según una condición.
+
+### Condicional simple
+
+```txt
+Si condición Entonces
+    Acción
+FinSi
+```
+
+### Condicional doble
+
+```txt
+Si condición Entonces
+    Acción 1
+Sino
+    Acción 2
+FinSi
+```
+
+### Condicional múltiple
+
+```txt
+Según variable Hacer
+    Caso 1:
+        Acción 1
+    Caso 2:
+        Acción 2
+    De Otro Modo:
+        Acción 3
+FinSegún
+```
+
+## Estructuras repetitivas
+
+### Mientras
+
+```txt
+Mientras condición Hacer
+    Instrucciones
+FinMientras
+```
+
+### Repetir...Hasta Que
+
+```txt
+Repetir
+    Instrucciones
+Hasta Que condición
+```
+
+### Para
+
+```txt
+Para contador <- valorInicial Hasta valorFinal Hacer
+    Instrucciones
+FinPara
+```
+
+# Ejercicio: Control de ventas en una tienda
+
+## Planteamiento del problema
+
+Se desea crear un programa que permita ingresar la cantidad de productos vendidos en una tienda. Por cada producto se debe ingresar su precio. Si el precio es menor o igual a 0, el programa debe mostrar un mensaje de error y volver a pedir el dato.
+
+Al final, el programa debe calcular el total de la venta. Si el total supera los $100, se aplica un descuento del 10%.
+
+## Análisis
+
+| Elemento | Descripción |
+|---|---|
+| Datos de entrada | Cantidad de productos vendidos y precio de cada producto |
+| Proceso | Validar datos, acumular ventas y aplicar descuento |
+| Datos de salida | Total de venta, descuento y total final |
+
+## Validación
+
+| Paso | Dato ingresado | Validación | Total acumulado |
+|---|---:|---|---:|
+| Cantidad de productos | 3 | Válido | 0 |
+| Producto #1 | 40 | Válido | 40 |
+| Producto #2 | -10 | Inválido | 40 |
+| Producto #2 | 35 | Válido | 75 |
+| Producto #3 | 50 | Válido | 125 |
+
+## Reflexión crítica
+
+La aplicación de estructuras condicionales y repetitivas permite resolver problemas de manera más ordenada y eficiente. Las estructuras repetitivas evitan repetir código y las condicionales permiten validar datos y tomar decisiones según las necesidades del problema.
